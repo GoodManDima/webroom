@@ -1,11 +1,11 @@
-<h1>Listing users</h1>
+<h1>Список пользователей</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Surname</th>
-      <th>Age</th>
+      <th>Имя</th>
+      <th>Фамилия</th>
+      <th>Возраст</th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +18,9 @@
         <td><%= user.name %></td>
         <td><%= user.surname %></td>
         <td><%= user.age %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', user %></td>
+        <td><%= link_to 'Редактирование', edit_user_path(user) %></td>
+        <td><%= link_to 'Удалить', user, method: :delete, data: { confirm: 'Вы уверены?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'Регистрация', new_user_path %>

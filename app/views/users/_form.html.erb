@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name, "Имя" %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :surname %><br>
+    <%= f.label :surname, "Фамилия" %><br>
     <%= f.text_field :surname %>
   </div>
   <div class="field">
-    <%= f.label :age %><br>
+    <%= f.label :age, "Возраст" %><br>
     <%= f.number_field :age %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Принять" %>
   </div>
 <% end %>
