@@ -6,6 +6,7 @@ gem 'rails', '4.0.1'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 group :development do
+	gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
@@ -18,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-
+gem "net-ssh", "~> 2.8.0"
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
